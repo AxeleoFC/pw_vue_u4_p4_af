@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="contenedor">
     <label for="">ID</label>
     <input v-model="id" type="text" />
     <button @click="eliminarEstudiante()">Eliminar</button>
@@ -33,6 +33,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.contenedor{
+  display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 </style>

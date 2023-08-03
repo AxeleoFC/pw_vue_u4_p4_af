@@ -1,8 +1,6 @@
 <template>
-  <ConsultarEstudiante></ConsultarEstudiante>
-  <GuardarEstudiante></GuardarEstudiante>
-  <ActualizaEstudiante></ActualizaEstudiante>
-  <EliminaEstudiante></EliminaEstudiante>
+  <EstudianteRedireccion></EstudianteRedireccion>
+  <router-view></router-view>
 </template>
 
 <script>
@@ -10,13 +8,15 @@ import ConsultarEstudiante from './modulos/estudiante/pages/ConsultarEstudiante.
 import GuardarEstudiante from './modulos/estudiante/pages/GuardarEstudiante.vue';
 import ActualizaEstudiante from './modulos/estudiante/pages/ActualizaEstudiante.vue';
 import EliminaEstudiante from './modulos/estudiante/pages/EliminaEstudiante.vue';
+import EstudianteRedireccion from './modulos/estudiante/components/EstudianteRedireccion.vue';
 export default {
   name: 'App',
   components: {
     ConsultarEstudiante,
     GuardarEstudiante,
     ActualizaEstudiante,
-    EliminaEstudiante
+    EliminaEstudiante,
+    EstudianteRedireccion
   }
 }
 </script>

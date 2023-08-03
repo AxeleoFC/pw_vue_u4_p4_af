@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="contenedor">
     <label for="">Cedula</label>
     <input v-model="cedula" type="text" />
-    <button @click="consultarEstudianteAxios()">Consultar</button>
     <label for="">Nombre</label>
     <input v-model="nombre" type="text" />
     <label for="">Apellido</label>
     <input v-model="apellido" type="text" />
+    <button @click="consultarEstudianteAxios()">Consultar</button>
   </div>
 </template>
 
@@ -42,5 +42,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+.contenedor{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 </style>

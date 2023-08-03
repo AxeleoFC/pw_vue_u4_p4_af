@@ -4,24 +4,43 @@ export const obtenerEstudianteFachada=async (cedula)=>{
     return await obtenerEstudianteAPI(cedula);
 }
 
+export const obtenerEstudianteAxiosFachada=async (cedula)=>{
+    return await obtenerEstudianteAPIAxios(cedula);
+}
+
 export const ingresarEstudianteFachada=(bodyEstudiante)=>{
-    
+    ingresarEstudiante(bodyEstudiante);
 }
 
 export const actualizarEstudianteFachada=(bodyEstudiante, id)=>{
-    
+    actualizarEstudiante(bodyEstudiante,id)
 }
 
 export const eliminarEstudianteFachada=(id)=>{
-    
+    eliminarEstudiante(id)
 }
+
+//Metodos
 
 const obtenerEstudianteAPI=async (cedula)=>{
-    const data=await fetch(`http://localhost:8080/API/V1.0/Matricula/estudiantes/${cedula}`.then(r=>r.json()));
-
+    const data=await fetch(`http://localhost:8080/API/V1.0/Matricula/estudiantes/${cedula}`).then(r => r.json());
     console.log(data);
+    return data;
 }
 
-const obtenerEstudianteAPIAxios=(cedula)=>{
+const obtenerEstudianteAPIAxios=async (cedula)=>{
+    const data=axios.get(`http://localhost:8080/API/V1.0/Matricula/estudiantes/${cedula}`).then(r=>r.data);
+    return data;
+}
 
+const ingresarEstudiante=(bodyEstudiante)=>{
+    axios.post(`http://localhost:8080/API/V1.0/Matricula/estudiantes`, bodyEstudiante).then(r=>r.data);
+}
+
+const actualizarEstudiante=(bodyEstudiante, id)=>{
+    axios.put(`http://localhost:8080/API/V1.0/Matricula/estudiantes/${id}`, bodyEstudiante).then(r=>r.data);
+}
+
+const eliminarEstudiante=(id)=>{
+    axios.delete(`http://localhost:8080/API/V1.0/Matricula/estudiantes/${id}`).then(r=>r.data);
 }

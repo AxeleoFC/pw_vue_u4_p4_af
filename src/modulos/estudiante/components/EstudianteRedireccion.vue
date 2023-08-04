@@ -16,24 +16,23 @@ export default {
 .contenedor {
   font-weight: bold;
   color: #232525;
-  margin: 40px;
-  padding: 10px 30px; /* Corregir aquí agregando las unidades de medida */
-  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
 
-/* Agregar margen entre los router-link dentro del contenedor */
-.contenedor router-link:not(:last-child) {
-  margin-right: 10px;
-}
 
-div,a{
-    background: blue;
+div{
+    background: gray;
+    padding-block: 20px;
     font-weight: bold;
     color: #232525;
-    margin: 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+a{
+  padding-inline: 30px;
 }
 </style>
 

@@ -9,7 +9,7 @@ const routes = [
         component: ()=> import ('../modulos/estudiante/pages/GuardarEstudiante.vue')
     },
     {
-        path: "/buscar",
+        path: "/buscar/:cedula",
         component: ()=> import ('../modulos/estudiante/pages/ConsultarEstudiante.vue')
     },
     {

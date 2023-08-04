@@ -4,7 +4,7 @@
     <input v-model="id" type="text" />
     <button @click="eliminarEstudiante()">Eliminar</button>
   </div>
-  <label v-show="registro" for="">Exito al Eliminar {{}}</label>
+  <label v-show="registro" for="">Exito al Eliminar: {{nombre}}</label>
 </template>
   
 <script>
@@ -28,7 +28,7 @@ export default {
 };
 </script>
   
-<style>
+<style scoped>
 body {
   display: flex;
   justify-content: center;

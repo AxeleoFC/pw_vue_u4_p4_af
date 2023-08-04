@@ -1,5 +1,5 @@
 <template>
-  <label for="">Eliminar</label>
+  <h1>Eliminar</h1>
   <DatosEliminarEstudiante></DatosEliminarEstudiante>
 </template>
 

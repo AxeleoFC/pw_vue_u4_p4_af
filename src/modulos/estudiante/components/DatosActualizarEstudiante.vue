@@ -52,12 +52,16 @@ export default {
 };
 </script>
   
-<style>
+<style scoped>
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+label{
+  align-items: right;
+  justify-content: right;
 }
 .contenedor{
   display: flex;

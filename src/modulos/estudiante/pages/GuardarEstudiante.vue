@@ -1,5 +1,5 @@
 <template>
-  <label for="">Ingresar</label>
+  <h1>Ingresar</h1>
   <DatosGuardarEstudiantes/>
 </template>
 

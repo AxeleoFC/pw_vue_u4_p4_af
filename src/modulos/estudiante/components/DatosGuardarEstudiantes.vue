@@ -46,10 +46,11 @@ export default {
       this.registro = true;
     },
   },
+  
 };
 </script>
 
-<style>
+<style scoped>
 body {
   display: flex;
   justify-content: center;
@@ -60,5 +61,11 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+input{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
 }
 </style>

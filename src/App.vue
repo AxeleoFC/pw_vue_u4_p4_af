@@ -4,18 +4,10 @@
 </template>
 
 <script>
-import ConsultarEstudiante from './modulos/estudiante/pages/ConsultarEstudiante.vue';
-import GuardarEstudiante from './modulos/estudiante/pages/GuardarEstudiante.vue';
-import ActualizaEstudiante from './modulos/estudiante/pages/ActualizaEstudiante.vue';
-import EliminaEstudiante from './modulos/estudiante/pages/EliminaEstudiante.vue';
 import EstudianteRedireccion from './modulos/estudiante/components/EstudianteRedireccion.vue';
 export default {
   name: 'App',
   components: {
-    ConsultarEstudiante,
-    GuardarEstudiante,
-    ActualizaEstudiante,
-    EliminaEstudiante,
     EstudianteRedireccion
   }
 }
@@ -29,5 +21,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background: coral;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <label for="">Actualizar</label>
+  <div>
+    <h1>Actualizar</h1>
     <DatosActualizarEstudiante></DatosActualizarEstudiante>
   </div>
 </template>
@@ -14,8 +14,6 @@ export default {
 }
 </script>
 
-<style>
-.container{
-  margin: 10px;
-}
+<style scope>
+
 </style>

@@ -39,7 +39,7 @@ export default {
     this.cedula=cedula
     console.log(ciudad)
     this.consultarEstudiante(cedula)
-    console.log(this.$route.params.cedula)
+    console.log(this.$route)
   }
 };
 </script>

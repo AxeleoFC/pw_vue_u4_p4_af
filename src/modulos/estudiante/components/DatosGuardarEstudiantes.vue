@@ -10,7 +10,7 @@
     <input v-model="fechaNacimineto" type="text" />
     <label for="">Provincia</label>
     <input v-model="provincia" type="text" />
-    <button @click="guardarEstudiante()">Guardar</button>
+    <button @click="guardarEstudiante()" class="btn btn-outline-dark">Guardar</button>
     <label v-show="registro" for="">Exito al Ingresas</label>
   </div>
 </template>

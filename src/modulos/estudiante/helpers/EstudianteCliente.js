@@ -24,7 +24,7 @@ export const eliminarEstudianteFachada=(id)=>{
 
 const obtenerEstudianteAPI=async (cedula)=>{
     const headers={
-        "Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJheGVsIiwiaWF0IjoxNjkyNzQ4OTc4LCJleHAiOjE2OTM5NDg5Nzh9.PYw7a4YUeq-vAj97cUSnDZv8igZbxQRdk8XBX5-JZFJvSV-LYglva6k0LNiyQ8_-A7OBQwmJP_PyPvVfNpTWcw",
+        "Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJheGVsIiwiaWF0IjoxNjkyODM1OTE1LCJleHAiOjE2OTQwMzU5MTV9.6z8i05BsBykCzdUF03vnPKKdiBFWwpCeO0-NCjfYMYimz_87umUCWm_RQmciPsplfBDZPSX2nHDuggJ62Cl1jg",
         "Mensaje":"Valor1"
     }
     const data=await fetch(`http://localhost:8081/API/V1.0/Matricula/estudiantes/${cedula}`,{headers:headers}).then(r => r.json());
@@ -34,7 +34,7 @@ const obtenerEstudianteAPI=async (cedula)=>{
 const obtenerEstudianteAPIAxios=async (cedula)=>{
     // En el config vamos a enviar todas los datos de cabecera
     const headers={
-        "Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJheGVsIiwiaWF0IjoxNjkyNzQ5OTYzLCJleHAiOjE2OTM5NDk5NjN9.Xpsft56qTtSQoMY2IQPnhP63hqAIRrHA-LxEAJvw6ZTeapxwuKv8IQlbQtQYpaew5OFDSafGo3Z6exGiWTlY9g",
+        "Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJheGVsIiwiaWF0IjoxNjkyNzUwODM5LCJleHAiOjE2OTM5NTA4Mzl9.TqpnnPKmXbbsn6HGLpT0_08bI2GHeD4TdFw1YLFCggwfzeXEm0gPuBw1ZoRfcVURxXFjy5mkLtotKPtMIUQ9IA",
         "Mensaje":"Valor1"
     }
     const data=axios.get(`http://localhost:8081/API/V1.0/Matricula/estudiantes/${cedula}`,{headers:headers}).then(r=>r.data);
